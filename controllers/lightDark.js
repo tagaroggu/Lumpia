@@ -1,6 +1,7 @@
 export default class lightDark {
 	constructor(host) {
 		(this.host = host).addController(this);
+		this.handleChange(window.matchMedia('(prefers-color-scheme: dark)'));
 	}
 
 	get isSupported() {
