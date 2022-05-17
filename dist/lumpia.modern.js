@@ -1,0 +1,2 @@
+class e{constructor(e){(this.host=e).addController(this)}get isSupported(){return!!window.matchMedia}hostConnected(){this.isSupported&&window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",this.handleChange)}hostDisconnected(){this.isSupported&&window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change",this.handleChange)}handleChange({matches:e}){this.isDark=e,this.isLight=!e,this.host.requestUpdate()}}export{e as lightDark};
+//# sourceMappingURL=lumpia.modern.js.map
