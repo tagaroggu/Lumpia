@@ -1,20 +1,10 @@
 {
   "name": "lumpia",
   "version": "1.0.1",
-  "description": "Some functions and controllers for Lit",
+  "description": "Some functions and controllers for lit-html",
   "type": "module",
-  "source": "lumpia.js",
-  "main": "./dist/lumpia.cjs",
-  "module": "./dist/lumpia.module.js",
-  "unpkg": "./dist/lumpia.umd.js",
-  "exports": {
-    "require": "./dist/lumpia.cjs",
-    "default": "./dist/lumpia.modern.js"
-  },
-  "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
-  },
+  "source": "./lumpia.js",
+  "main": "./lumpia.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tagaroggu/lumpia.git"
@@ -28,7 +18,7 @@
     "url": "https://github.com/tagaroggu/lumpia/issues"
   },
   "homepage": "https://github.com/tagaroggu/lumpia#readme",
-  "devDependencies": {
-    "microbundle": "^0.15.0"
+  "dependencies": {
+    "nanostores": "^0.7.0"
   }
 }
